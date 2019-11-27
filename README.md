@@ -2,7 +2,7 @@
 
 Code is written in python3.
 
-To execute the script just run 'python3 main.py' from the main folder.
+To execute the script just navigate to this folder and run 'python3 main.py' from the command line.
 
 It will ask you for a file pathway to input.
 
