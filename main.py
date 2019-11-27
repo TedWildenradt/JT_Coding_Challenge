@@ -68,9 +68,11 @@ class Soccer(object):
     except:
       print('Sorry, that file cannot be found. Please try again.')
       return
-    # file_object = open('sample_input.txt','r')
     for line in file_object:
       game = line.split(',')
+      if len(game) != 2:
+        print('Error. The line: "' + line + '" is not in the form expected')
+        return
       team1_info = self.parseTeamAndScore(game[0])
       team2_info = self.parseTeamAndScore(game[1])
       self.determinePoints(team1_info,team2_info)
